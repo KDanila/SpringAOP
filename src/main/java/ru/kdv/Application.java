@@ -4,6 +4,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import ru.kdv.configuration.Config;
 import ru.kdv.dao.AccountDAO;
 import ru.kdv.dao.MembershipDAO;
+import ru.kdv.entity.Account;
 
 public class Application {
     public static void main(String[] args) {
@@ -12,6 +13,9 @@ public class Application {
         MembershipDAO membershipDAO = context.getBean("membershipDAO", MembershipDAO.class);
         accountDAO.getAccount();
         membershipDAO.getAccount();
+        accountDAO.addAccount(new Account());
+        accountDAO.addVipAccount(new Account(), true);
+        accountDAO.doSomeWork();
         context.close();
     }
 }
