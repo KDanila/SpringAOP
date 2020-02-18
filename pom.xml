@@ -23,6 +23,7 @@
         <module>AspectAdvice</module>
         <module>PointcutDeclaration</module>
         <module>MultiplePointcutDeclaration</module>
+        <module>OrderAspects</module>
     </modules>
 
     <dependencies>
