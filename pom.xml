@@ -25,6 +25,7 @@
         <module>MultiplePointcutDeclaration</module>
         <module>OrderAspects</module>
         <module>AspectJoinpoint</module>
+        <module>AfterReturning</module>
     </modules>
 
     <dependencies>
