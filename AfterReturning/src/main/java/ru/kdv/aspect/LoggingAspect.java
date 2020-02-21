@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 import ru.kdv.entity.Account;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Aspect
 @Order(-1)
@@ -37,7 +38,15 @@ public class LoggingAspect {
         System.out.println("=======================AFTER RETURNING=========================");
         String method = joinPoint.getSignature().toShortString();
         System.out.println("Method signature " + method);
-
         System.out.println("Result is: " + result);
+
+        System.out.println("Modify data from aspect");
+        converatAccountToUpperCase(result);
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        System.out.println(result);
+    }
+
+    private void converatAccountToUpperCase(List<Account> result) {
+        result.stream().forEach(account -> account.setName(account.getName().toUpperCase()));
     }
 }
