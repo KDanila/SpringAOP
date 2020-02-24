@@ -11,7 +11,7 @@
     <groupId>ru.kdv</groupId>
     <artifactId>SpringAOP</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
     <name>SpringAOP</name>
     <description>Spring AOP demo</description>
 
@@ -26,6 +26,10 @@
         <module>OrderAspects</module>
         <module>AspectJoinpoint</module>
         <module>AfterReturning</module>
+        <module>AfterThrowing</module>
+        <module>After(Finally)</module>
+        <module>AroundAspect</module>
+        <module>AroundHandleExcetion</module>
     </modules>
 
     <dependencies>
