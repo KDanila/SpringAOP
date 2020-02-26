@@ -27,7 +27,7 @@
         <module>AspectJoinpoint</module>
         <module>AfterReturning</module>
         <module>AfterThrowing</module>
-        <module>After(Finally)</module>
+        <module>After_Finally</module>
         <module>AroundAspect</module>
         <module>AroundHandleExcetion</module>
     </modules>
