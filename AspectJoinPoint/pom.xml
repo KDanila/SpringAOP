@@ -1,6 +1,6 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>After_Finally</artifactId>
+    <artifactId>AspectJoinPoint</artifactId>
     <version>2.0</version>
     <packaging>jar</packaging>
     <parent>
